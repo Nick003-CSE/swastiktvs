@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raja Offer - Lucky Draw</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raja Offer - Lucky Draw</title>
+  <style>
         * {
             margin: 0;
             padding: 0;
@@ -179,8 +179,6 @@
             opacity: 0.9;
         }
 
-
-
         .spinning {
             animation: spin-wheel 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
         }
@@ -212,219 +210,207 @@
         }
         
         .footer {
-    margin-top: 50px;
-    padding: 30px 20px;
-    background: rgba(0,0,0,0.2);
-    backdrop-filter: blur(10px);
-    border-top: 2px solid rgba(255,255,255,0.1);
-    text-align: center;
-}
+            margin-top: 50px;
+            padding: 30px 20px;
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border-top: 2px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
 
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.footer-section h3 {
-    color: #FFD700;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
+        .footer-section h3 {
+            color: #FFD700;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
 
-.footer-section.main {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
+        .footer-section.main {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
 
-.footer-section.main h3 {
-    font-size: 20px;
-}
+        .footer-section.main h3 {
+            font-size: 20px;
+        }
 
-.footer-section.main p {
-    font-size: 15px;
-    color: rgba(255,255,255,0.9);
-    margin: 8px 0;
-    line-height: 1.4;
-}
+        .footer-section.main p {
+            font-size: 15px;
+            color: rgba(255,255,255,0.9);
+            margin: 8px 0;
+            line-height: 1.4;
+        }
 
-.footer-section.secondary h3 {
-    font-size: 14px;
-}
+        .footer-section.secondary h3 {
+            font-size: 14px;
+        }
 
-.footer-section.secondary p {
-    font-size: 12px;
-    color: rgba(255,255,255,0.8);
-    margin: 4px 0;
-    line-height: 1.3;
-}
+        .footer-section.secondary p {
+            font-size: 12px;
+            color: rgba(255,255,255,0.8);
+            margin: 4px 0;
+            line-height: 1.3;
+        }
 
-.footer-section a {
-    color: #FFD700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .footer-section a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.footer-section a:hover {
-    color: #FFA500;
-}
+        .footer-section a:hover {
+            color: #FFA500;
+        }
 
-@media (max-width: 768px) {
-    .footer-section.main {
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-    }
-}
+        @media (max-width: 768px) {
+            .footer-section.main {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎯 RAJO OFFER 🎯</h1>
-        
-        <div class="wheel-container">
-            <div class="wheel-pointer"></div>
-            <div class="wheel" id="wheel">
-                <div class="wheel-section section1">
-                    <img src="assets/dinner-set.jpg" alt="Dinner Set">
-                </div>
-                <div class="wheel-section section2">
-                    <img src="assets/tvs.jpg" alt="TVS Merchandise">
-                </div>
-                <div class="wheel-section section3">
-                    <img src="assets/peter-england.jpg" alt="Peter England">
-                </div>
-                <div class="wheel-section section4">
-                    <img src="assets/pipul.jpg" alt="Pipul Hotel">
-                </div>
-            </div>
-            <div class="wheel-center">SPIN</div>
+  <div class="container">
+    <h1>🎯 RAJO OFFER 🎯</h1>
+    
+    <div class="wheel-container">
+      <div class="wheel-pointer"></div>
+      <div class="wheel" id="wheel">
+        <div class="wheel-section section1">
+          <img src="assets/dinner-set.jpg" alt="Dinner Set">
         </div>
-
-        <button class="spin-button" id="spinButton" onclick="spinWheel()">🎲 SPIN THE WHEEL 🎲</button>
-
-        <div class="result" id="result">
-            <p>Click the spin button to try your luck!</p>
+        <div class="wheel-section section2">
+          <img src="assets/tvs.jpg" alt="TVS Merchandise">
         </div>
+        <div class="wheel-section section3">
+          <img src="assets/peter-england.jpg" alt="Peter England">
+        </div>
+        <div class="wheel-section section4">
+          <img src="assets/pipul.jpg" alt="Pipul Hotel">
+        </div>
+      </div>
+      <div class="wheel-center">SPIN</div>
     </div>
 
-    <footer class="footer">
+    <button class="spin-button" id="spinButton" onclick="spinWheel()">🎲 SPIN THE WHEEL 🎲</button>
+
+    <div class="result" id="result">
+      <p>Click the spin button to try your luck!</p>
+    </div>
+  </div>
+
+  <footer class="footer">
     <div class="footer-content">
-        <div class="footer-section main">
-            <h3>🏍️ SWASTIK TVS</h3>
-            <p>📧 Email: sriradheautotech@gmail.com</p>
-            <p>📞 Phone: +91 94370 15509</p>
-            <p>📍 Address: Bellview Chhak, CDA, Sector-1, Cuttack 753014</p>
-        </div>
-        <div class="footer-section secondary">
-            <h3>💝 Designed with Love</h3>
-            <p>✨ <strong>Siyaram Consultancy</strong></p>
-            <p>📞 <a href="tel:+917854074538">+91 78540 74538</a></p>
-        </div>
+      <div class="footer-section main">
+        <h3>🏍️ SWASTIK TVS</h3>
+        <p>📧 Email: sriradheautotech@gmail.com</p>
+        <p>📞 Phone: +91 94370 15509</p>
+        <p>📍 Address: Bellview Chhak, CDA, Sector-1, Cuttack 753014</p>
+      </div>
+      <div class="footer-section secondary">
+        <h3>💝 Designed with Love</h3>
+        <p>✨ <strong>Siyaram Consultancy</strong></p>
+        <p>📞 <a href="tel:+917854074538">+91 78540 74538</a></p>
+      </div>
     </div>
-</footer>
+  </footer>
 
-    <script>
-        let totalSpins = 0;
-let currentRotation = 0; // Track cumulative rotation
-let winCounts = {
-    dinnerSet: 0,
-    tvs: 0,
-    peter: 0,
-    hotel: 0
-};
+  <script>
+    let totalSpins = 0;
+    let currentRotation = 0;
+    let winCounts = {
+      dinnerSet: 0,
+      tvs: 0,
+      peter: 0,
+      hotel: 0
+    };
+    let spinning = false;
+    let hotelStayGiven = false;
 
-let spinning = false;
-let hotelStayGiven = false;
+    const prizes = [
+      { name: "Dinner Set", id: "dinnerSet", angle: 0, description: "🍽️ Congratulations! You won a Beautiful Dinner Set!" },
+      { name: "TVS Merchandise", id: "tvs", angle: 90, description: "🏍️ Amazing! You won Exclusive TVS Merchandise!" },
+      { name: "Peter England Coupons", id: "peter", angle: 180, description: "👔 Great! You won Peter England Shopping Coupons!" },
+      { name: "Pipul Hotel Stay", id: "hotel", angle: 270, description: "🏨 JACKPOT! You won a Night Stay at Pipul Hotel Puri!" }
+    ];
 
-const prizes = [
-    { name: "Dinner Set", id: "dinnerSet", angle: 45, description: "🍽️ Congratulations! You won a Beautiful Dinner Set!" },
-    { name: "TVS Merchandise", id: "tvs", angle: 135, description: "🏍️ Amazing! You won Exclusive TVS Merchandise!" },
-    { name: "Peter England Coupons", id: "peter", angle: 225, description: "👔 Great! You won Peter England Shopping Coupons!" },
-    { name: "Pipul Hotel Stay", id: "hotel", angle: 315, description: "🏨 JACKPOT! You won a Night Stay at Pipul Hotel Puri!" }
-];
-
-function determineWinner() {
-    totalSpins++;
-    
-    // Hotel stay logic - only once after 25-28 spins
-    if (!hotelStayGiven && totalSpins >= 25 && totalSpins <= 28) {
-        if (Math.random() < 0.8) { // 80% chance in this range
-            hotelStayGiven = true;
-            return prizes[3]; // Hotel stay
+    function determineWinner() {
+      totalSpins++;
+      
+      if (!hotelStayGiven && totalSpins >= 25 && totalSpins <= 28) {
+        if (Math.random() < 0.8) {
+          hotelStayGiven = true;
+          return prizes[3];
         }
-    }
-    
-    // Peter England logic - every 8-10 spins
-    if (totalSpins % 8 === 0 || totalSpins % 9 === 0 || totalSpins % 10 === 0) {
-        if (Math.random() < 0.7) { // 70% chance
-            return prizes[2]; // Peter England
-        }
-    }
-    
-    // TVS merchandise logic - every 5-6 spins
-    if (totalSpins % 5 === 0 || totalSpins % 6 === 0) {
-        if (Math.random() < 0.6) { // 60% chance
-            return prizes[1]; // TVS
-        }
-    }
-    
-    // Default to dinner set (maximum times)
-    return prizes[0]; // Dinner Set
-}
+      }
 
-function spinWheel() {
-    if (spinning) return;
-    
-    spinning = true;
-    const spinButton = document.getElementById('spinButton');
-    const wheel = document.getElementById('wheel');
-    const result = document.getElementById('result');
-    
-    spinButton.disabled = true;
-    result.innerHTML = '<p>🎲 Spinning...</p>';
-    
-    const winner = determineWinner();
-    winCounts[winner.id]++;
-    
-    // Calculate final rotation to make pointer land on winner
-    const baseRotation = 1800; // 5 full rotations
-    const finalAngle = winner.angle; // Angle where prize is located
-    const totalRotation = currentRotation + baseRotation + finalAngle;
-    
-    // Apply rotation
-    wheel.style.transform = `rotate(${totalRotation}deg)`;
-    currentRotation = totalRotation; // Update current rotation for next spin
-    
-    // Show result after animation
-    setTimeout(() => {
+      if (totalSpins % 8 === 0 || totalSpins % 9 === 0 || totalSpins % 10 === 0) {
+        if (Math.random() < 0.7) {
+          return prizes[2];
+        }
+      }
+
+      if (totalSpins % 5 === 0 || totalSpins % 6 === 0) {
+        if (Math.random() < 0.6) {
+          return prizes[1];
+        }
+      }
+
+      return prizes[0];
+    }
+
+    function spinWheel() {
+      if (spinning) return;
+
+      spinning = true;
+      const spinButton = document.getElementById('spinButton');
+      const wheel = document.getElementById('wheel');
+      const result = document.getElementById('result');
+
+      spinButton.disabled = true;
+      result.innerHTML = '<p>🎲 Spinning...</p>';
+
+      const winner = determineWinner();
+      winCounts[winner.id]++;
+
+      const baseRotation = 360 * 5; // 5 full spins
+      const offset = Math.random() * 20 - 10; // ±10° randomness
+      const targetAngle = 360 - winner.angle + offset;
+
+      const totalRotation = currentRotation + baseRotation + targetAngle;
+      wheel.style.transform = `rotate(${totalRotation}deg)`;
+      currentRotation = totalRotation;
+
+      setTimeout(() => {
         result.innerHTML = `
-            <div>
-                <h2>${winner.name}</h2>
-                <p>${winner.description}</p>
-            </div>
+          <div>
+            <h2>${winner.name}</h2>
+            <p>${winner.description}</p>
+          </div>
         `;
-        
         spinning = false;
         spinButton.disabled = false;
-    }, 4000);
-}
+      }, 4000);
+    }
 
-// Initialize display
-console.log('Lucky Draw Wheel Initialized');
+    console.log('Lucky Draw Wheel Initialized');
 
-// Add keyboard support for TV remotes
-document.addEventListener('keydown', function(event) {
-    // Enter key or Space key to spin
-    if (event.key === 'Enter' || event.key === ' ') {
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
         spinWheel();
-    }
-});
+      }
+    });
 
-// Auto-focus the spin button for TV navigation
-window.addEventListener('load', function() {
-    document.getElementById('spinButton').focus();
-});
-    </script>
+    window.addEventListener('load', function() {
+      document.getElementById('spinButton').focus();
+    });
+  </script>
 </body>
 </html>
